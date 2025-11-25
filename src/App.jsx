@@ -11,6 +11,7 @@ import ProjectList from './components/ProjectList';
 import Summary from './components/Summary';
 import Footer from './components/Footer';
 import PdfButton from './components/PdfButton';
+import profilePhoto from './assets/profile.jpg';
 
 function App() {
   const contentRef = useRef(null);
@@ -26,7 +27,7 @@ function App() {
           </div>
 
           <div ref={contentRef} className="space-y-8">
-            <ProfileCard photoSrc="/1736621807561.jpg" />
+            <ProfileCard photoSrc={profilePhoto} />
 
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8">
               <Section title="Perfil Profissional" delay={0.3}>
